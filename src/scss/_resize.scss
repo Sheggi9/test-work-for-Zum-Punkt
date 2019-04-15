@@ -1,4 +1,5 @@
 @media screen and (max-width: 1000px) {
+
   .header-wrap{
     flex-direction: column;
     height: auto;
@@ -8,11 +9,11 @@
   }
 
   .header-logo,.header-gender-filter,.header-search-field{
-    margin: 5px auto;
+    margin-top: 15px;
   }
 
   .header-login-button{
-    margin: 25px auto;
+    margin: 20px auto;
   }
 
   .header-search-field__input{
@@ -71,6 +72,48 @@
 }
 
 @media screen and (max-width: 880px) {
+
+  .ham {
+    display: block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham6 .top {
+    stroke-dasharray: 40 172;
+  }
+  .ham6 .middle {
+    stroke-dasharray: 40 111;
+  }
+  .ham6 .bottom {
+    stroke-dasharray: 40 172;
+  }
+  .ham6.active .top {
+    stroke-dashoffset: -132px;
+  }
+  .ham6.active .middle {
+    stroke-dashoffset: -71px;
+  }
+  .ham6.active .bottom {
+    stroke-dashoffset: -132px;
+  }
 
   .header-logo__img-wrap{
     margin-top: 0px;
@@ -284,13 +327,13 @@
     align-content: center;
     align-items: center;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 8px;
   }
 
   .header__nav-menu{
-    padding: 5px;
-    margin: 0 15px 0 0;
+    //padding: 5px;
+    margin: 0 10px 0 0;
   }
   .header-logo__img{
     margin-right: 37px;
