@@ -46,8 +46,14 @@ input {outline:none;}
 
 button {outline:none;}
 
-img {
-  transition: transform .2s ease;
+.questions__img {
+  transition: transform .2s linear;
+  transform: rotate(90deg);
+}
+
+.rotate {
+  transform: rotate(45deg);
+  transition: transform .2s linear;
 }
 
 @mixin flex-center-center{
@@ -56,9 +62,7 @@ img {
   align-items: center;
 }
 
-.rotate {
-  transform: rotate(-45deg);
-}
+
 
 .header,.nav-menu,.questions,.partner,footer,.main-block{
   margin: 0 auto;
@@ -449,6 +453,10 @@ img {
 
 questions__answer_1_none{
   display: none;
+}
+
+.questions__answer_on > .questions__answer{
+  display: block;
 }
 
 
