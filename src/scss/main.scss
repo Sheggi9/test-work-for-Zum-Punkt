@@ -265,6 +265,7 @@ button {outline:none;}
     line-height: 1.29;
     letter-spacing: normal;
     color: #000000;
+    max-width: 100%;
   }
   &__delivery-options{
     display: flex;
@@ -401,6 +402,7 @@ button {outline:none;}
 
 .questions__answer{
   display: none;
+  max-width: 100%;
 }
 
 .questions__answer_block{
