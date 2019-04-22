@@ -1,4 +1,7 @@
 @media screen and (max-width: 1000px) {
+  .header-search-field__input{
+    transition: all .2s linear;
+  }
 
   .header-wrap{
     flex-direction: column;
@@ -72,6 +75,11 @@
 }
 
 @media screen and (max-width: 880px) {
+
+
+  .main-block__delivery-options-form-input{
+    margin-right: 3px;
+  }
 
   .ham {
     display: block;
@@ -332,7 +340,6 @@
   }
 
   .header__nav-menu{
-    //padding: 5px;
     margin: 0 10px 0 0;
   }
   .header-logo__img{
@@ -369,6 +376,11 @@
     display: flex;
     align-items: center;
     align-content: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    transition: all .2s linear;
   }
 
   .header__icon-img-cart-top,.header__icon-img-cart-bottom{
@@ -390,6 +402,10 @@
 }
 
 @media screen and (max-width: 618px) {
+
+  .questions__block_last_adaptive{
+    border-bottom: 1px solid #dcdcdc;
+  }
   h1{
     font-size: 26px;
     font-weight: 600;
@@ -492,11 +508,14 @@
   }
 
   .questions__block{
-    padding: 24px 0;
+    padding: 24px 0 14px 0;
+  }
+
+  .questions__wrap{
+    margin-bottom: 10px;
   }
 
   .questions__answer{
-    padding-top: 10px;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;

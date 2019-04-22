@@ -56,7 +56,7 @@
                 <div class="header-search-field__img">
                     <img class="header-search-field-img" src="./img/search.svg" alt="">
                 </div>
-                <input class="header-search-field__input" type="text" placeholder="ПОИСК ТОВАРОВ">
+                <input class="header-search-field__input" type="text" placeholder="ПОИСК ТОВАРОВ" autocomplete="off" maxlength="36">
             </div>
             <div class="header-login-button header-login-button_none">
                 <div class="header-login-button__img">
@@ -122,8 +122,13 @@
                             Узнать подробнее о способах, сроках и ценах доставки в ваше городе
                         </div>
                         <div class="main-block__delivery-options-form">
-                            <input class="main-block__delivery-options-form-input" type="text" value="Санкт-Петербург">
+                            <input class="main-block__delivery-options-form-input" type="text" placeholder="Санкт-Петербург?" list="listcity">
+                            <datalist id="listcity">
+                                <option>Санкт-Петербург</option>
+                                <option>Москва</option>
+                            </datalist>
                             <button class="main-block__delivery-options-form-button">УЗНАТЬ</button>
+
                         </div>
                     </div>
                 </div>
@@ -214,7 +219,7 @@
                                 <img src="./img/plus.svg" alt="" class="questions__img-url" id="foo1">
                             </div>
                         </div>
-                        <div class="questions__answer questions__answer_1_none">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
+                        <div class="questions__answer">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
                     </div>
                     <div class="questions__block">
                         <div class="questions__wrap">
@@ -223,7 +228,7 @@
                                 <img src="./img/plus.svg" alt="" class="questions__img-url" id="foo2">
                             </div>
                         </div>
-                        <div class="questions__answer questions__answer_2_none">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
+                        <div class="questions__answer">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
                     </div>
                     <div class="questions__block questions__block-hidden">
                         <div class="questions__wrap">
@@ -232,16 +237,16 @@
                                 <img src="./img/plus.svg" alt="" class="questions__img-url" id="foo3">
                             </div>
                         </div>
-                        <div class="questions__answer questions__answer_3_none">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
+                        <div class="questions__answer">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
                     </div>
-                    <div class="questions__block">
+                    <div class="questions__block questions__block_last_adaptive">
                         <div class="questions__wrap">
                             <div class="questions__text">Мне придется ждать торгового представителя целый день?</div>
                             <div class="questions__img questions__img-4">
                                 <img src="./img/plus.svg" alt="" class="questions__img-url" id="foo4">
                             </div>
                         </div>
-                        <div class="questions__answer questions__answer_4_none">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
+                        <div class="questions__answer">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
                     </div>
                     <div class="questions__block questions__block-hidden">
                         <div class="questions__wrap">
@@ -250,7 +255,7 @@
                                 <img src="./img/plus.svg" alt="" class="questions__img-url" id="foo5">
                             </div>
                         </div>
-                        <div class="questions__answer questions__answer_5_none">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
+                        <div class="questions__answer">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
                     </div>
                     <div class="questions__block questions__block-hidden">
                         <div class="questions__wrap">
@@ -259,7 +264,7 @@
                                 <img src="./img/plus.svg" alt="" class="questions__img-url" id="foo6">
                             </div>
                         </div>
-                        <div class="questions__answer questions__answer_6_none">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
+                        <div class="questions__answer">Нет. Торговый представитель приедет в тот временной интервал, который вы указали при оформлении заказа. Если вы точно знаете, в какое время нужен заказ, закажите доставку в течение выбранного часа или 15-ти минут.</div>
                     </div>
                 </div>
                 <div class="questions__button">
@@ -376,6 +381,10 @@
             </div>
         </div>
     </footer>
+<script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

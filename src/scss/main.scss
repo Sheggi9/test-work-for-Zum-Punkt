@@ -47,7 +47,16 @@ h2{
 
 input {outline:none;}
 
-button {outline:none;}
+button {
+  outline:none;
+}
+
+.search-input-err {
+  background-color: #dbdbdb !important;
+  transition: all .2s linear;
+  outline: none;
+  box-shadow: 0 0 5px #000000;
+}
 
 .questions__img {
   transition: transform .2s linear;
@@ -159,6 +168,7 @@ button {outline:none;}
     padding: 15px 19px 15px 44px;
     border-radius: 4px;
     background-color: #ededed;
+    transition: all .2s linear;
   }
   &-search-field__input::placeholder{
     font-size: 12px;
@@ -185,6 +195,38 @@ button {outline:none;}
     }
   }
 }
+
+.nav-menu-list__item-url{
+  padding: 10px 13px;
+}
+
+.nav-menu-list__item-url{
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  transition: all .5s linear;
+
+}
+.nav-menu-list__item-url:hover{
+  border-right: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-radius: 20px;
+  background: #ededed;
+  transition: all .2s linear;
+}
+
+.nav-menu-list__item_sale > .nav-menu-list__item-url:hover{
+  border-right: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-radius: 20px;
+  background: rgba(248, 44, 75, 0.11);
+  transition: all .2s linear;
+}
+
+.nav-menu-list__item{
+  padding: 16px 10px !important;
+}
+
 
 .main-block{
   display: flex;
@@ -215,6 +257,7 @@ button {outline:none;}
   }
 }
 
+
 .header-logo__img,.header__nav-menu-icon-img,button,.questions__img,.partner__owl-img{
   cursor: pointer;
 }
@@ -241,6 +284,8 @@ button {outline:none;}
 .nav-menu-list > .nav-menu-list__item > .nav-menu-list__item-url{
   text-decoration: none;
 }
+
+
 
 .main-block{
   &__services-wrap > *{
@@ -307,7 +352,8 @@ button {outline:none;}
         border-radius: 4px;
         border: solid 1px #dcdcdc;
         background-color: #ffffff;
-        padding: 14px 48px 14px 10px;
+        padding: 14px 10px 14px 10px;
+        transition: all .2s linear;
       }
     }
     &-wrap{
@@ -367,6 +413,10 @@ button {outline:none;}
   }
 }
 
+button:active{
+  //background: #000;
+  box-shadow: 0 0 5px #000000;
+}
 
 .questions__block{
   @include flex-center-center;
@@ -452,21 +502,9 @@ button {outline:none;}
   margin: 30px 0 60px 0;
 }
 
-.questions__answer{
-  transition: all .2s linear;
-}
-
-questions__answer_1_none{
-  display: none;
-}
-
 .questions__answer_on > .questions__answer{
   display: block;
 }
-
-
-
-
 
 
 .partner-wrap{
